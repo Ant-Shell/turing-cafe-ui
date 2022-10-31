@@ -38,6 +38,7 @@ class Form extends Component {
         type="input"
         placeholder="Name"
         name="name"
+        data-cy="name"
         value={this.state.name}
         onChange={(event) => this.changeHandler(event)}
         />
@@ -45,6 +46,7 @@ class Form extends Component {
         type="input"
         placeholder="Date (mm/dd)"
         name="date"
+        data-cy="date"
         value={this.state.date}
         onChange={(event) => this.changeHandler(event)}
         />
@@ -52,6 +54,7 @@ class Form extends Component {
         type="input"
         placeholder="Time"
         name="time"
+        data-cy="time"
         value={this.state.time}
         onChange={(event) => this.changeHandler(event)}
         />
@@ -59,10 +62,11 @@ class Form extends Component {
         type="input"
         placeholder="Number of guests"
         name="number"
+        data-cy="number"
         value={this.state.number}
         onChange={(event) => this.changeHandler(event)}
         />
-        <button onClick={(event) => this.submitReservation(event)}>Make Reservation</button>
+        <button onClick={(event) => this.submitReservation(event)} data-cy="submit-btn">Make Reservation</button>
       </form>
     )
   }

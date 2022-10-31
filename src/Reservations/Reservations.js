@@ -12,12 +12,13 @@ const Reservations = ( {reservations} ) => {
       date={date}
       time={time}
       number={number}
+      key={id}
       />
     )
   })
 
   return (
-    <div className="resy-list-container">
+    <div className="resy-list-container" data-cy="list-container">
       {reservationsList}
     </div>
   )
